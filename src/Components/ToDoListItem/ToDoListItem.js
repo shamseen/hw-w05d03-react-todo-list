@@ -2,7 +2,9 @@ const ToDoListItem = ({ content, buttonText, handleClick }) => {
   return (
     <li>
       <span>{content}</span>
-      <button onClick={() => handleClick()}>{buttonText}</button>
+      <button onClick={() => handleClick()} className={buttonText}>
+        {buttonText}
+      </button>
     </li>
   );
 };

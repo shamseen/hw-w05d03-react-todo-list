@@ -1,7 +1,18 @@
-* {
+ {
   box-sizing: border-box;
   outline: none;
 }
+
+/* Sublime monokai theme 
+Background: (46, 46, 46); #2e2e2e
+Comments: (121, 121, 121); #797979
+White: (214, 214, 214); #d6d6d6
+Yellow: (229, 181, 103); #e5b567
+Green: (180, 210, 115); #b4d273
+Orange: (232, 125, 62); #e87d3e
+Purple: (158, 134, 200); #9e86c8
+Pink: (176, 82, 121); #b05279
+Blue: (108, 153, 187); #6c99bb */
 
 /* Center the list */
 body {
@@ -11,23 +22,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #f3f5fc;
+  background: #2e2e2e;
+  color: #fafafa;
   font-family: "Open Sans", sans-serif;
 }
 
 .App {
   width: 500px;
-  background: white;
   border-radius: 9px;
   border: 1px solid #e7ecfb;
   box-shadow: 0 0 30px rgba(211, 220, 248, 0.3);
   padding: 30px;
+  color: #fafafa;
 }
 
 h1,
 h2 {
   font-family: "Open Sans", sans-serif;
-  color: rgb(23, 5, 58);
   text-transform: capitalize;
 }
 
@@ -40,10 +51,8 @@ label {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: rgb(41, 41, 41);
   padding-bottom: 0.5rem;
   display: inline-block;
-  color: #3f455f;
 }
 input {
   width: 100%;
@@ -52,9 +61,11 @@ input {
   font-weight: 600;
   border: 0;
   border-radius: 9px;
-  color: #666f99;
   padding: 12px 60px 12px 18px;
-  background: #f3f5fc;
+  background: #aa647b;
+  border-radius: 9px;
+  border: 1px solid #e7ecfb;
+  box-shadow: 0 0 30px rgba(211, 220, 248, 0.3);
 }
 
 li {
@@ -64,7 +75,6 @@ li {
   flex-wrap: nowrap;
   justify-content: space-between;
   font-size: 20px;
-  color: rgb(23, 5, 58);
   margin: 1rem 0;
 }
 
@@ -77,7 +87,8 @@ li > span {
 
 li > button {
   text-transform: uppercase;
-  background-color: rgb(23, 5, 58);
+  background-color: #388e3c;
+  color: #d3d3d3;
   display: block;
   position: relative;
   margin-left: 1em;
@@ -85,7 +96,6 @@ li > button {
   height: 35px;
   line-height: 35px;
   padding: 0 1.5rem;
-  color: white;
   font-size: 13px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
@@ -103,4 +113,6 @@ li > button {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+  border-radius: 9px;
+  box-shadow: 0 0 30px rgba(211, 220, 248, 0.3);
 }

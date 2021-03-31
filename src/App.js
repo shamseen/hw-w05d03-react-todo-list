@@ -2,7 +2,7 @@ import { useState } from "react";
 import ToDoList from "./Components/ToDoList/ToDoList";
 import CompletedList from "./Components/CompletedIList/CompletedList";
 import Form from "./Components/Form/Form";
-import "./styles.css";
+import "./styles.scss";
 import toDoListData from "./data";
 
 export default function App() {
