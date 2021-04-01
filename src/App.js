@@ -14,14 +14,13 @@ export default function App() {
   );
 
   const addToCompleted = (index) => {
-    /*
-    Create a copy of the the todo items
-    Remove item at index from the todo list
-    Update completed property to true
-    Move Item to the top of the completed items list
-    Use only State Setter Methods so that you don't
-    update state directly
-   */
+    // copying / manipulating newly completed
+    const item = { ...toDoItems[index] };
+    item.completed = true;
+
+    // updating state
+    updateCompleted([item, ...completedItems]);
+    updateToDoItems([...toDoItems.filter((i) => i.title !== item.title)]);
   };
 
   const removeFromCompleted = (index) => {
