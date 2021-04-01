@@ -26,12 +26,9 @@ export default function App() {
   };
 
   const removeFromCompleted = (index) => {
-    /*
-    Create a copy of the the completed items
-    Remove item from completed list
-    Use only State Setter Methods so that you don't
-    update state directly
-   */
+    updateCompleted([
+      ...completedItems.filter((i) => i.title !== completedItems[index].title)
+    ]);
   };
 
   const handleSubmit = (item) => {
