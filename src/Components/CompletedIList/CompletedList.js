@@ -3,7 +3,7 @@ import ToDoListItem from "../ToDoListItem/ToDoListItem";
 const Completedlist = ({ completedItems, removeFromCompleted }) => {
   return (
     <div>
-      <h2> Completed </h2>
+      <h2> Done💪</h2>
       <ul>
         {completedItems.map((item, index) => {
           return (
