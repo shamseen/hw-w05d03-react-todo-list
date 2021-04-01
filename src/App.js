@@ -13,8 +13,6 @@ export default function App() {
     toDoListData.filter((item) => item.completed)
   );
 
-  const [debugln, setdebug] = useState([]);
-
   const addToCompleted = (index) => {
     // copying / manipulating newly completed
     const item = { ...toDoItems[index] };
@@ -37,7 +35,6 @@ export default function App() {
 
   return (
     <div className="App">
-      {JSON.stringify(debugln)}
       <h1>My to do list:</h1>
       <Form handleSubmit={handleSubmit} />
       <ToDoList toDoItems={toDoItems} addToCompleted={addToCompleted} />

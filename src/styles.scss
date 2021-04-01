@@ -18,14 +18,14 @@ $blue: #66D9EF;
 
 @mixin x-transition {
   -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 @mixin shadowboxing ($value: $white) {
- border-radius: 9px;
- box-shadow: 0 0 30px rgba(211, 220, 248, 0.3);
- border: 1px solid $value;
- color: $value;
+  border-radius: 9px;
+  box-shadow: 0 0 30px rgba(211, 220, 248, 0.3);
+  border: 1px solid $value;
+  color: $value;
 }
 
 * {
@@ -49,7 +49,6 @@ body {
   padding: 30px;
   @include shadowboxing($purple);
   color: $white;
-
 }
 
 h1,
@@ -89,9 +88,9 @@ li {
 
   span {
     overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-grow: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
   }
 
   button {
@@ -122,6 +121,7 @@ li {
     &.complete {
       @include shadowboxing($green);
     }
+
     @include x-transition;
     @include x-user-select;
   }
